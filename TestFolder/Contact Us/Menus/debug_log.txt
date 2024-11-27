@@ -1,2 +1,0 @@
-Fetched password hash: $2y$10$qYRBvanAL6EnVBCbhPwUP.L0vXjqlj0zPB2JJeV0DX1
-Entered password: 080603
