@@ -1,0 +1,280 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.sidebar .logo img {
+    width: 60%; /* Make the logo smaller */
+    margin-bottom: 20px;
+    padding-left: 100px;
+}
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin-top: 10px;
+    width: 80%; /* Make the search bar shorter */
+    max-width: 900px; /* Add a maximum width for responsiveness */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 15px; /* Increase padding for a larger height */
+    font-size: 1rem; /* Make text size larger */
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 15px; /* Match height with input */
+    font-size: 1rem; /* Make the button text larger */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+
+/* Slider Wrapper */
+/* Slider Wrapper */
+.slider {
+    position: relative;
+    margin-top: 20px;
+    text-align: center; /* Center-aligns the heading above */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack the heading above the carousel */
+    align-items: center;
+}
+
+/* Carousel Container */
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 920px; /* Width for 3 images (300px each + 20px margin each side) */
+    overflow: hidden;
+    margin: 20px auto; /* Center carousel on the page */
+}
+
+/* Carousel Content */
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content; /* Dynamically adjust the width based on the number of images */
+    justify-content: center;
+}
+
+/* Individual Images */
+.carousel-content img {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust image width to fit the layout */
+    height: auto;
+    margin: 0 10px; /* Space between images */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Buttons */
+button.prev-btn,
+button.next-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button.prev-btn {
+    left: 0; /* Position on the left of the carousel */
+}
+
+button.next-btn {
+    right: 0; /* Position on the right of the carousel */
+}
+
+/* Center Align the Carousel */
+.carousel-content {
+    justify-content: center;
+}
+
+/* Centered Heading */
+.slider h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px; /* Adds spacing between the heading and the carousel */
+    text-align: center;
+}
+
+/* Individual Images */
+.carousel-content img {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust image width to fit the layout */
+    height: auto;
+    margin: 0 10px; /* Space between images */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Buttons */
+button.prev-btn,
+button.next-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button.prev-btn {
+    left: 0; /* Position on the left of the carousel */
+}
+
+button.next-btn {
+    right: 0; /* Position on the right of the carousel */
+}
+
+/* Center Align the Slider */
+.carousel-content {
+    justify-content: center;
+}
+
+
+.walking-tours {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.walking-tours .tours h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Brief History Section */
+.brief-history img {
+    width: 50%; /* Adjust the size of the image */
+    max-width: 300px; /* Prevent the image from becoming too large */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+.brief-history {
+    display: flex; /* Align items in a row */
+    align-items: flex-start; /* Align the heading and paragraph to the top of the image */
+    gap: 20px; /* Space between the image and text block */
+}
+.brief-history p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0; /* Remove default margins for better alignment */
+}
+.brief-history div { 
+    display: flex;
+    flex-direction: column; /* Stack heading and paragraph */
+    flex: 1; /* Allow the text block to take up remaining space */
+}
+.brief-history h2 {
+    margin-bottom: 10px; /* Add spacing below the heading */
+    font-size: 1.5rem; /* Slightly smaller heading size */
+}
